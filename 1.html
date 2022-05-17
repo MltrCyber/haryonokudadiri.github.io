@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes || HARY-IT - Make Your Heart Comfortable</title>
+    <link rel="stylesheet" href="Font-Awesome-master/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body class="dark-mode">
+    <script src="js/script.js"></script>
+    <!-- Message Box -->
+    <!-- Then put toasts within -->
+    <div class="alert-toast-holder position-absolute h-100 w-100 justify-content-center align-items-center d-flex d-none">
+        <div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body py-4">
+                <button type="button" class="btn-close float-end" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="toast-content"></div>
+            </div>
+        </div>
+    </div>
+    <!--End of Message Box -->
+    <!-- Confirm Box -->
+    <div class="alert-toast-holder position-absolute h-100 w-100 justify-content-center align-items-center d-flex d-none">
+        <div class="toast" id="confirm_toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Confirmation</strong>
+                <button type="button" class="btn btn-sm p-0 bg-none text-white" data-bs-dismiss="toast" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="toast-body py-4">
+                <div class="toast-content"></div>
+                <div class="">
+                    <button class="btn btn-sm float-end mx-1 my-2 btn-light" class="btn-close" data-bs-dismiss="toast" type="button">Cancel</button>
+                    <button class="btn btn-sm float-end mx-1 my-2 btn-danger" type="button" id="confirm_delete" data-id="">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Confirm Box -->
+
+    <div class="container-fluid py-5 h-100">
+        <div class="row h-100">
+            <div class="col-lg-8" id="noteForm" data-id="">
+                <div class="card card-primary border-primary">
+                    <div class="card-header bg-primary">
+                        <h5 class="card-title">NOTES</h5>
+                       
+                    </div>
+                    <div class="card-body">
+                        <h3 >Hai</h3>
+                        <div class="px-1 py-2" contenteditable="true" name="note" data-placeholder="Write your notes here."></div>
+                    </div>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
